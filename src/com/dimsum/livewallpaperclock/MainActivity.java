@@ -19,7 +19,16 @@ public class MainActivity extends Activity {
 		
 		TextClock mainClock = (TextClock) findViewById(R.id.main_clock);
 		mainClock.setFormat12Hour("h:mm");
+		
+		TextClock dayOfWeek = (TextClock) findViewById(R.id.day_of_week);
+		dayOfWeek.setFormat12Hour("EEEE");
 
+		TextClock month = (TextClock) findViewById(R.id.month);
+		month.setFormat12Hour("MMMM");
+		
+		TextClock year = (TextClock) findViewById(R.id.year);
+		year.setFormat12Hour("yyyy");
+		
 	}
 
 	@Override

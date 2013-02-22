@@ -4,9 +4,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal">
+    
     <TextClock android:id="@+id/main_clock"
-        android:layout_weight="1"
+        android:layout_weight="100"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="100sp" />
+    
+    <TextClock android:id="@+id/day_of_week"
+        android:layout_weight="50"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="80sp" />
+    
+	 <TextClock android:id="@+id/month"
+        android:layout_weight="50"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="100sp" />
+
+	<TextClock android:id="@+id/year"
+        android:layout_weight="50"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="100sp" />
+	 
 </LinearLayout>
