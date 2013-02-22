@@ -15,7 +15,11 @@ public class MainActivity extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		
-		setContentView(R.layout.activity_main);		
+		setContentView(R.layout.activity_main);
+		
+		TextClock mainClock = (TextClock) findViewById(R.id.main_clock);
+		mainClock.setFormat12Hour("h:mm");
+
 	}
 
 	@Override
