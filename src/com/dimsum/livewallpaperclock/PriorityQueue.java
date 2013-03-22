@@ -1,5 +1,7 @@
 package com.dimsum.livewallpaperclock;
 
+import android.util.Log;
+
 public class PriorityQueue {
 	
 	private final int MAX_SIZE;
@@ -40,11 +42,20 @@ public class PriorityQueue {
 		getArray()[b] = placeholder;		
 	}
 
-	public int[ ] getArray() {
+	private int[ ] getArray() {
 		return array;
 	}
 
 	private void setArray(int[ ] array) {
 		this.array = array;
+	}
+	
+	@Override 
+	public String toString() {
+		String description = "";
+		for (int i = 0; i < getArray().length; i++) {
+			Log.v("ME", String.format("Index: %d, %s", i, getArray()[i]));
+		}
+		return description;
 	}
 }

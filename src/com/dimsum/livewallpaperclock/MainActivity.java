@@ -45,9 +45,7 @@ public class MainActivity extends Activity {
 		priorityQueue.insert(62);
 		priorityQueue.insert(3);
 		
-		for (int i = 0; i < priorityQueue.getArray().length; i++) {
-			Log.v("ME", "Index: " + i + " = " + priorityQueue.getArray()[i]);
-		}
+		Log.v("ME", priorityQueue.toString());
 	}
 
 	@Override
